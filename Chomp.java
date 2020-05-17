@@ -58,8 +58,7 @@ public class Chomp extends JFrame
       p.makeMove();
     }
   }
-
-  public static void main(String[] args)
+   public static void main(String[] args)
   {
     Chomp window = new Chomp();
     window.setTitle("Chomp");
@@ -68,5 +67,7 @@ public class Chomp extends JFrame
     window.setResizable(false);
     window.setVisible(true);
   }
+
+  
 }
 

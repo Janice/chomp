@@ -18,7 +18,7 @@ public class ComputerPlayer
   private int moveRow, moveCol;
 
   private Strategy strategy;
-  private EasySound chompSound;
+ // private EasySound chompSound;
 
   public ComputerPlayer(Chomp program, ChompGame game, BoardPanel board)
   {
@@ -26,7 +26,7 @@ public class ComputerPlayer
     this.game = game;
     this.board = board;
     clock = new Timer(250, this);
-    chompSound = new EasySound("chomp.wav");
+   // chompSound = new EasySound("chomp.wav");
   }
 
   /**
@@ -89,7 +89,7 @@ public class ComputerPlayer
       clock.stop();
       game.makeMove(moveRow, moveCol);
       program.hasMoved();
-      chompSound.play();
+     // chompSound.play();
     }
   }
 }
